@@ -36,7 +36,7 @@ contract BlueGhost is ERC721A, Ownable, ERC2981ContractRoyalties {
     //amount of mints that each address has executed.
     mapping(address => uint256) public mintsPerAddress;
 
-    constructor(string memory baseURI) ERC721A("NFTContract", "NFT") {
+    constructor(string memory baseURI) ERC721A("BlueGhost", "BGH") {
         baseTokenURI = baseURI;
         setRoyalties(owner(), ROYALTIES_POINTS);
         
