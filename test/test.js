@@ -102,4 +102,29 @@ describe("NFT contract creation, NFT minting, royalties, withdraw,", () => {
     })
   })
 
+  describe("BlueGhost Royalties", () => {
+
+    let marketplaceFactory;
+    let marketplace
+  
+    beforeEach(async () => {
+      marketplaceFactory = await ethers.getContractFactory("BasicMarketplaceRoyalties")
+  
+      marketplace = await marketplaceFactory.deploy()
+  
+      await marketplace.setNFTContract(nft.address)
+      await nft.openPublicSale();
+  
+    })
+      it("should aprove, list and sell a token in the marketplace, 10% of price should go to royalties address Owner", async () => {
+        await nft.connect(aliceAccount).mintNFTs(1, {value: ethers.utils.parseEther("0.1")})
+        await nft.connect(aliceAccount).setApprovalForAll(marketplace.address, true)
+        await marketplace.connect(aliceAccount).listNft(30, ethers.utils.parseEther("10"))
+        
+        expect(()=> marketplace.connect(bobAccount).buyExactMatchNative(1, 1, "0x", {value:ethers.utils.parseEther("10")}).to.changeEtherBalances([alice, bob, owner], [9, -10, 1]))
+      })
+  
+      
+    })
+
 })
