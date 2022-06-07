@@ -8,7 +8,7 @@ EIP-2981 royalties. Set to send 5% of sales proceeds to the deployer of the cont
 Other features:
 - ````openPublicSale()```` to grant the deployer more control on the minting process, it needs to be called for the minting to happen.
 - Max-tokens-per-wallet and max-tokens-per-mint. Avoid that any single wallet hoards all your collection. This can be bypassed spunning new wallets, but its annoying and the minter has to pay gas fees repeatedly.
-- ````CallerIsUser```` modifier to only allow calls from EOA, not from other smart contracts. This is used to avoid certain exploits.
+- ````CallerIsUser()```` modifier to only allow calls from EOA, not from other smart contracts. This is used to avoid certain exploits.
 - ````reveal()```` function to change the baseTokenUri and improve the fairness of minting.
 - ````withdraw()```` function. It allows to withdraw all ETH from the contract to the Owner address
 
