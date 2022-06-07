@@ -18,11 +18,11 @@ Some basic Waffle tests are included, as well as a gas report from [hardhat-gas-
 - General report
 ![gasreport](https://github.com/IpastorSan/ERC721-NFT-with-EIP2981-royalties/blob/main/gas_report.png)
 - Mint 1 NFT
-![gasreport](https://github.com/IpastorSan/ERC721-NFT-with-EIP2981-royalties/blob/master/mint-1-token.png)
+![gasreport](https://github.com/IpastorSan/ERC721A-nft-EIP2981-royalties/blob/master/mint-1-token.png)
 - Mint 5 NFTs
-![gasreport](https://github.com/IpastorSan/ERC721-NFT-with-EIP2981-royalties/blob/master/mint-5-tokens.png)
+![gasreport](https://github.com/IpastorSan/ERC721-nft-with-EIP2981-royalties/blob/master/mint-5-tokens.png)
 - Mint 10 NFTs
-![gasreport](https://github.com/IpastorSan/ERC721-NFT-with-EIP2981-royalties/blob/master/mint-10-tokens.png)
+![gasreport](https://github.com/IpastorSan/ERC721-nft-with-EIP2981-royalties/blob/master/mint-10-tokens.png)
 
 ## Useful commands to run the project 
 
