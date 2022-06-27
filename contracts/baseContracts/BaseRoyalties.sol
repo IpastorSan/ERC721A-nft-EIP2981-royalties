@@ -6,7 +6,7 @@ import '@openzeppelin/contracts/utils/introspection/ERC165.sol';
 
 import '../interfaces/IERC2981Royalties.sol';
 
-/// @dev This is a contract used to add ERC2981 support to ERC721 and 1155
+/// @dev This is a contract used to add ERC2981 support to ERC721 and ERC11551155
 abstract contract ERC2981Base is ERC165, IERC2981Royalties {
     
     struct RoyaltyInfo {
