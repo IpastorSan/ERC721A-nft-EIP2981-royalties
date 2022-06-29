@@ -7,7 +7,7 @@ async function main() {
 
 // We get the contract to deploy
   let deployment_base_uri = "ipfs://someipfsCIDherewouldbenice/"
-  const NFTContractContract = await hre.ethers.getContractFactory("NFTContract");
+  const NFTContractContract = await hre.ethers.getContractFactory("BlueGhost");
   const NFTContract = await NFTContractContract.deploy(deployment_base_uri);
 
   await NFTContract.deployed();
