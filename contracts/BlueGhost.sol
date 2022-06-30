@@ -10,9 +10,6 @@ import "erc721a/contracts/ERC721A.sol";
 import './royalties/ContractRoyalties.sol';
 
 contract BlueGhost is ERC721A, Ownable, ERC2981ContractRoyalties {
-
-    //Interface for royalties
-    bytes4 private constant _INTERFACE_ID_ERC2981 = 0x2a55205a;
     
     //Boolean to control public sale
     bool private publicSaleIsOpen = false;

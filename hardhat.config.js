@@ -20,6 +20,12 @@ module.exports = {
       gasMultiplier: 1.2,
     },
 
+        polygonMumbai:{
+      url: process.env.MUMBAI_KEY,
+      accounts: [process.env.PRIVATE_KEY_DEVELOPMENT],
+      gasMultiplier: 1.2,
+    },
+
     mainnet:{
       url: process.env.PRODUCTION_ALCHEMY_KEY,
       accounts: [process.env.PRIVATE_KEY_PRODUCTION],
